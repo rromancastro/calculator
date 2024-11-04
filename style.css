@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #626568;
+}
+
+article {
+    width: 350px;
+    height: 90vh;
+    background-color: #EDB052;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 14px 11px 0px 0px rgba(107,128,185,0.75);
+-webkit-box-shadow: 14px 11px 0px 0px rgba(107,128,185,0.75);
+-moz-box-shadow: 14px 11px 0px 0px rgba(107,128,185,0.75);
+    h2 {
+        color: rgb(59, 59, 59);
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+.pantalla {
+    width: 100%;
+    height: 20%;
+    background-color: #92C8DC;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 22px 10px 0px 0px rgba(107,128,185,0.75) inset;
+    -webkit-box-shadow: 22px 10px 0px 0px rgba(107,128,185,0.75) inset;
+    -moz-box-shadow: 22px 10px 0px 0px rgba(107,128,185,0.75) inset;
+    border-radius: 10px;
+    border: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    h3 {
+        margin-right: 15px;
+        font-size: 55px;
+        font-family: "Kanit", sans-serif;
+        color: black;
+        font-weight: 300;
+        line-height: 1;
+        justify-self: flex-end;
+    }
+    h4 {
+        margin-right: 15px;
+        font-size: 25px;
+        font-family: "Kanit", sans-serif;
+        color: #999999;
+        font-weight: 300;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+}
+.botones {
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    background-color: #EDB052;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    grid-template-areas: "ac ac ac dividir"
+                         "siete ocho nueve multiplicar"
+                         "cuatro cinco seis menos"
+                         "uno dos tres mas"
+                         "cero cero punto igual";
+    button {
+        font-size: 30px;
+        color: black;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        box-shadow: 7px 6px 0px 0px #6B81BF;
+        -webkit-box-shadow: 7px 6px 0px 0px #6B81BF;
+        -moz-box-shadow: 7px 6px 0px 0px #6B81BF;
+        scale: .97;
+        transition: .2s;
+    }
+    button:hover{
+        scale: 1;
+    }
+    button:active{
+        scale: .9;
+    }
+}
+
+.ac {grid-area: ac;}
+.dividir {grid-area: dividir;}
+.siete {grid-area: siete;}
+.ocho {grid-area: ocho;}
+.nueve{grid-area:nueve;}
+.multiplicar {grid-area: multiplicar;}
+.cinco {grid-area: cinco;}
+.seis {grid-area: seis;}
+.cuatro {grid-area: cuatro;}
+.menos {grid-area: menos;}
+.uno {grid-area: uno;}
+.dos {grid-area: dos;}
+.tres {grid-area: tres;}
+.mas {grid-area: mas;}
+.cero {
+    grid-area: cero;
+}
+.punto {grid-area: punto;}
+.igual {grid-area: igual;}
+.borrar {grid-area: borrar;}
+
+
+.buttonNumber {
+    background-color: #91C9DB;
+    transition: .1s;
+    &:active{
+        background-color: #629db1;
+    }
+}
+.buttonOperator {
+    background-color: #629db1;
+    transition: .1s;
+    &:active{
+        background-color: #477585;
+    }
+}
+.buttonExtra {
+    background-color: #bcd9e2;
+}
+
+#buttonAC {
+    color: black;
+    font-weight: 400;
+    transition: .1s;
+    &:active{
+        background-color: #629db1;
+    }
+}

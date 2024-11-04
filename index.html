@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article>
+        <section class="pantalla">
+            <h4 id="pantallaH4"></h4>
+            <h3 id="pantallaH3"></h3>
+        </section>
+        <section class="botones">
+            <button id="7" onclick="agregarNumero(7)" class="buttonNumber siete">7</button>
+            <button id="8" onclick="agregarNumero(8)" class="buttonNumber ocho">8</button>
+            <button id="9" onclick="agregarNumero(9)" class="buttonNumber nueve">9</button>
+            <button id="buttonX" class="buttonOperator multiplicar">x</button>
+            <button id="4" onclick="agregarNumero(4)" class="buttonNumber cuatro">4</button>
+            <button id="5" onclick="agregarNumero(5)" class="buttonNumber cinco">5</button>
+            <button id="6" onclick="agregarNumero(6)" class="buttonNumber seis">6</button>
+            <button id="button/" class="buttonOperator dividir">/</button>
+            <button id="1" onclick="agregarNumero(1)" class="buttonNumber uno">1</button>
+            <button id="2" onclick="agregarNumero(2)" class="buttonNumber dos">2</button>
+            <button id="3" onclick="agregarNumero(3)" class="buttonNumber tres">3</button>
+            <button id="button-" class="buttonOperator menos">-</button>
+            <button id="buttonAC" class="buttonExtra ac">AC</button>
+            <button id="0" onclick="agregarNumero(0)" class="buttonNumber cero">0</button>
+            <button id="button=" class="buttonOperator igual">=</button>
+            <button id="button+" class="buttonOperator mas">+</button>
+            <button id="buttonPunto" onclick="agregarPunto()" class="buttonNumber punto">.</button>
+        </section>
+        <h2>Roman Castro</h2>
+    </article>
+
+    <script src="./main.js"></script>
+</body>
+</html>
